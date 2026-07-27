@@ -1,92 +1,75 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
-  accentColor: "#1d4ed8",
+  name: "Allyson Freitas",
+  accentColor: "#d98f2b",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "allyson.f.m@hotmail.com",
+    linkedin: "https://linkedin.com/in/allysonfreitas",
+    twitter: "",
+    github: "https://github.com/rusthp",
   },
-  aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+  skills: [
+    "JavaScript",
+    "TypeScript",
+    "Node.js",
+    "Vue 3 / React",
+    "Prompt Engineering",
+    "LLM API Integration",
+    "Claude Code",
+    "Gemini",
+    "Qwen",
+    "DeepSeek",
+    "Automation",
+    "Git / GitHub",
+    "Proxmox",
+    "Zabbix / Grafana",
+    "Network Monitoring & Server Infrastructure",
+  ],
+  // Order must stay in sync with translations.{en,pt}.projects in src/i18n.ts
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
-      description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      name: "Korvian",
+      link: "",
+      skills: ["Fastify", "TypeScript", "Prisma", "PostgreSQL", "Vue 3"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
-      description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      name: "ProPlayNews",
+      link: "",
+      skills: ["CMMV", "Vue", "SQLite", "Automation"],
     },
     {
-      name: "ExtensionKit",
-      description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      name: "Cora Moda",
+      link: "https://coramoda.com.br",
+      skills: ["Node.js", "Web Development", "SEO"],
+    },
+    {
+      name: "VoxelPromo",
+      link: "https://voxelpromo.com",
+      skills: ["Node.js", "Express", "MongoDB", "React"],
+    },
+    {
+      name: "AlphaCota",
+      link: "",
+      skills: ["Python", "FastAPI", "React"],
     },
   ],
+  // Order must stay in sync with translations.{en,pt}.experience in src/i18n.ts
   experience: [
+    { company: "Korvian", dateRange: "2026 – Present" },
+    { company: "ProPlayNews", dateRange: "2026 – Present" },
+    { company: "Cora Moda", dateRange: "2026 – Present" },
+    { company: "VoxelPromo / AlphaCota", dateRange: "Personal Projects" },
+    { company: "Agência NovaStudio (Freelance)", dateRange: "Freelance" },
+    { company: "Me Salve Reforço Escolar", dateRange: "02/2024 – 12/2024" },
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
-      bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
-      ],
-    },
-    {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
-      bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
-      ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
-      ],
+      company: "Residência Pedagógica – Dom Bosco",
+      dateRange: "10/2022 – 01/2024",
     },
   ],
+  // Order must stay in sync with translations.{en,pt}.education in src/i18n.ts
   education: [
-    {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
-      achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
-    },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
-      ],
-    },
+    { school: "UFMS", dateRange: "2020 – 2024" },
+    { school: "Coders 24", dateRange: "2024" },
+    { school: "Alura", dateRange: "2023" },
+    { school: "Alura", dateRange: "2023" },
   ],
 };

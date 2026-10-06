@@ -1,9 +1,9 @@
 export const translations = {
   en: {
     meta: {
-      title: "Backend Developer | Automation, AI & Network Infrastructure",
+      title: "Backend Developer | Node.js, TypeScript & Observability",
       description:
-        "Portfolio of Allyson Freitas — backend developer focused on automation and AI integration, with a network analyst background (Proxmox, Zabbix, Grafana), founder of Korvian and ProPlayNews.",
+        "Portfolio of Allyson Freitas — backend developer (Node.js, TypeScript, PostgreSQL, Redis) with production monitoring experience for 15+ internet providers, founder of Korvian and Community Manager at UZMI Games.",
     },
     nav: {
       about: "About",
@@ -22,44 +22,59 @@ export const translations = {
       education: "Education",
     },
     aboutMe:
-      "Backend developer with a hybrid background in Linguistics and Software Development, focused on automation and AI integration. I build interfaces and backend logic in JavaScript/TypeScript, integrate LLM APIs to automate routines and evaluate text, and engineer prompts for reliable, structured output. I specialize in working across multiple AI models and agent tooling — Claude Code, Gemini, Qwen, and DeepSeek — choosing the right model for each task. I also work as a network analyst, with hands-on experience in Proxmox, server provisioning, and internal network monitoring (Zabbix, Grafana). I founded and run Korvian, a multi-tenant NOC monitoring platform, and ProPlayNews, a content/CMS platform — and build the storefront for Cora Moda alongside automation tooling for affiliate marketing and quantitative analysis.",
+      "Backend developer working with Node.js and TypeScript on services that run in production: PostgreSQL with Prisma, queues and cache on Redis, integrations with external APIs, and scheduled jobs. In my day job as a network analyst I handle monitoring and logs for 15+ internet providers (Zabbix, Grafana, Graylog), so I'm used to finding what broke in production and fixing it. I founded Korvian, a multi-tenant NOC platform, and I'm the Community Manager of Tales of Shadowland, an MMORPG by UZMI Games. I use Claude Code every day and integrate LLM APIs into real products. Background in Linguistics (Portuguese and English).",
     projects: [
       {
         description:
-          "Multi-tenant NOC monitoring platform I founded and lead development on — Zabbix/Grafana/Graylog integrations plus a VM migration engine across Proxmox clusters. Actively rolling out to 13+ regional internet providers.",
+          "Multi-tenant NOC platform I founded and develop — Fastify API with PostgreSQL and Prisma, BullMQ/Redis jobs for health checks and backups of Zabbix, Grafana and Graylog through their APIs, log-retention and agent-heartbeat alerts, and an AI chat that answers questions from live database data. Running for 15+ regional internet providers.",
       },
       {
         description:
-          "Content/CMS platform I founded and built as a monorepo of 10 internal packages — content engine, feeds, and social media integrations, with automation at the core.",
+          "Affiliate offer automation: collects deals from Amazon, Shopee, Mercado Livre and AliExpress, writes the copy with LLMs and publishes automatically to WhatsApp, Telegram, Instagram, Facebook and X — BullMQ/Redis queues and Stripe/Mercado Pago billing.",
+      },
+      {
+        description:
+          "Games and esports news portal. I built the ProPlayNews theme on top of the open-source CMMV blog platform and ContentMind, a Python pipeline that writes articles with LLMs and blocks publication when a fact isn't backed by the source news.",
+      },
+      {
+        description:
+          "SaaS that monitors public procurement notices: scheduled worker pulling from Brazil's PNCP API, per-company data isolation with Postgres RLS, recurring billing, and an AI chat grounded in each notice's text with answer caching.",
       },
       {
         description:
           "Website and storefront I developed and maintain for this dropshipping footwear brand (coramoda.com.br) — Node.js zero-dependency stack.",
       },
-      {
-        description:
-          "Affiliate marketing automation: AI-generated copy, scraping pipelines, and social integrations across 37 production API routes.",
-      },
-      {
-        description:
-          "Quantitative analysis engine for Brazilian real estate investment funds (FIIs), with 29 internal analysis engines.",
-      },
     ],
     experience: [
+      {
+        title: "Network Analyst",
+        bullets: [
+          "Monitoring and observability for 15+ internet providers: metrics (Zabbix, Grafana), logs (Graylog/OpenSearch) and alerts",
+          "Diagnose and fix production incidents, from broken dashboards to log pipelines dropping legally required CGNAT records",
+          "Python automation (SSH/Paramiko, Grafana API) to diagnose and fix dozens of servers in bulk",
+        ],
+      },
+      {
+        title: "Community Manager",
+        bullets: [
+          "Run the community for Tales of Shadowland, a free-to-play MMORPG on Steam, on Discord and WhatsApp",
+          "Bring player bugs and feedback to the development team",
+        ],
+      },
       {
         title: "Founder & Lead Developer",
         bullets: [
           "Built a multi-tenant NOC platform from the ground up (Fastify, Prisma, PostgreSQL, Vue 3)",
-          "Rolled out monitoring (Zabbix Proxy + Agent, Graylog) across 13+ internet providers",
-          "Engineered a VM migration pipeline between Proxmox clusters via vzdump/restore",
+          "Rolled out monitoring (Zabbix Proxy + Agent, Graylog) across 15+ internet providers",
+          "Production alerts and watchdogs routed to Discord",
         ],
       },
       {
-        title: "Founder & Developer",
+        title: "Theme & Content Pipeline Developer",
         bullets: [
-          "Founded and built a content/CMS monorepo with 10 internal packages",
-          "Automated content publishing and social feed pipelines",
-          "Own the platform end-to-end: architecture, deployment, and content operations",
+          "Built the ProPlayNews theme on the open-source CMMV blog platform",
+          "Built ContentMind, an LLM content pipeline with a fact-checking gate before publishing",
+          "Run deployment and operations of the site",
         ],
       },
       {
@@ -71,10 +86,9 @@ export const translations = {
         ],
       },
       {
-        title: "Full Stack Developer — Personal Projects",
+        title: "Full Stack Developer — Personal Project",
         bullets: [
-          "Built affiliate marketing automation with AI-generated copy and scraping (VoxelPromo)",
-          "Built a quantitative engine with 29 analysis modules for real estate funds (AlphaCota)",
+          "Built affiliate marketing automation with AI-generated copy, scraping and multi-channel publishing",
         ],
       },
       {
@@ -124,9 +138,9 @@ export const translations = {
   },
   pt: {
     meta: {
-      title: "Desenvolvedor Back-End | Automação, IA & Infraestrutura de Rede",
+      title: "Desenvolvedor Back-End | Node.js, TypeScript & Observabilidade",
       description:
-        "Portfólio de Allyson Freitas — desenvolvedor back-end focado em automação e integração de IA, com atuação como analista de rede (Proxmox, Zabbix, Grafana), fundador do Korvian e do ProPlayNews.",
+        "Portfólio de Allyson Freitas — desenvolvedor back-end (Node.js, TypeScript, PostgreSQL, Redis) com experiência em monitoramento de produção para mais de 15 provedores de internet, fundador do Korvian e Community Manager na UZMI Games.",
     },
     nav: {
       about: "Sobre",
@@ -145,44 +159,59 @@ export const translations = {
       education: "Formação",
     },
     aboutMe:
-      "Desenvolvedor back-end com formação híbrida em Linguística e Desenvolvimento de Software, focado em automação e integração de IA. Construo interfaces e lógica de back-end em JavaScript/TypeScript, integro APIs de LLM para automatizar rotinas e avaliar textos, e projeto prompts encadeados para gerar saídas confiáveis e estruturadas. Sou especializado em trabalhar com múltiplos modelos e ferramentas de agentes de IA — Claude Code, Gemini, Qwen e DeepSeek — escolhendo o modelo certo para cada tarefa. Também atuo como analista de rede, com experiência prática em Proxmox, provisionamento de servidores e monitoramento de rede interna (Zabbix, Grafana). Fundo e opero o Korvian, uma plataforma de NOC multi-tenant, e o ProPlayNews, uma plataforma de conteúdo/CMS — além de desenvolver o site da Cora Moda e ferramentas de automação para marketing de afiliados e análise quantitativa.",
+      "Desenvolvedor back-end com Node.js e TypeScript, trabalhando em serviços que rodam em produção: PostgreSQL com Prisma, filas e cache no Redis, integrações com APIs externas e jobs agendados. No meu trabalho como analista de redes cuido do monitoramento e dos logs de mais de 15 provedores de internet (Zabbix, Grafana, Graylog), então estou acostumado a achar o que quebrou em produção e corrigir. Fundei o Korvian, uma plataforma de NOC multi-tenant, e sou Community Manager do Tales of Shadowland, MMORPG da UZMI Games. Uso Claude Code todos os dias e integro APIs de LLM em produtos reais. Formado em Letras (Português e Inglês).",
     projects: [
       {
         description:
-          "Plataforma de NOC multi-tenant que fundei e lidero o desenvolvimento — integrações Zabbix/Grafana/Graylog e um motor de migração de VMs entre clusters Proxmox. Em rollout ativo para mais de 13 provedores de internet regionais.",
+          "Plataforma de NOC multi-tenant que fundei e desenvolvo — API em Fastify com PostgreSQL e Prisma, jobs em BullMQ/Redis de health check e backup de Zabbix, Grafana e Graylog pelas APIs, alertas de retenção de logs e de agentes sem sinal, e um chat com IA que responde a partir dos dados do banco. Rodando para mais de 15 provedores de internet regionais.",
       },
       {
         description:
-          "Plataforma de conteúdo/CMS que fundei e construí como um monorepo de 10 pacotes internos — motor de conteúdo, feeds e integrações com redes sociais, com automação no centro.",
+          "Automação de ofertas de afiliados: coleta promoções na Amazon, Shopee, Mercado Livre e AliExpress, gera a copy com LLM e publica sozinha no WhatsApp, Telegram, Instagram, Facebook e X — filas em BullMQ/Redis e cobrança via Stripe/Mercado Pago.",
+      },
+      {
+        description:
+          "Portal de notícias de games e esports. Desenvolvi o tema do ProPlayNews sobre a plataforma open source CMMV blog e o ContentMind, pipeline em Python que escreve matérias com LLM e bloqueia a publicação quando um fato não está nas notícias de origem.",
+      },
+      {
+        description:
+          "SaaS de monitoramento de editais públicos: worker agendado que coleta da API do PNCP, isolamento de dados por empresa com RLS no Postgres, assinatura recorrente e chat com IA baseado no texto de cada edital, com cache de respostas.",
       },
       {
         description:
           "Site e loja que desenvolvo e mantenho para esta marca de calçados em dropshipping (coramoda.com.br) — stack Node.js zero-dependency.",
       },
-      {
-        description:
-          "Automação de marketing de afiliados: geração de copy via IA, pipelines de scraping e integrações sociais em 37 rotas de API em produção.",
-      },
-      {
-        description:
-          "Motor de análise quantitativa para Fundos de Investimento Imobiliário (FIIs), com 29 engines internos de análise.",
-      },
     ],
     experience: [
+      {
+        title: "Analista de Redes",
+        bullets: [
+          "Monitoramento e observabilidade de mais de 15 provedores de internet: métricas (Zabbix, Grafana), logs (Graylog/OpenSearch) e alertas",
+          "Diagnóstico e correção de incidentes em produção, de painéis quebrados a pipelines de log descartando registros de CGNAT exigidos por lei",
+          "Automação em Python (SSH/Paramiko, API do Grafana) para diagnosticar e corrigir dezenas de servidores em lote",
+        ],
+      },
+      {
+        title: "Community Manager",
+        bullets: [
+          "Cuido da comunidade do Tales of Shadowland, MMORPG free-to-play na Steam, no Discord e no WhatsApp",
+          "Levo bugs e feedback dos jogadores para o time de desenvolvimento",
+        ],
+      },
       {
         title: "Fundador & Desenvolvedor Principal",
         bullets: [
           "Construí uma plataforma de NOC multi-tenant do zero (Fastify, Prisma, PostgreSQL, Vue 3)",
-          "Implantei monitoramento (Zabbix Proxy + Agent, Graylog) em mais de 13 provedores de internet",
-          "Desenvolvi um pipeline de migração de VMs entre clusters Proxmox via vzdump/restore",
+          "Implantei monitoramento (Zabbix Proxy + Agent, Graylog) em mais de 15 provedores de internet",
+          "Alertas e watchdogs de produção enviados para o Discord",
         ],
       },
       {
-        title: "Fundador & Desenvolvedor",
+        title: "Desenvolvedor do Tema e do Pipeline de Conteúdo",
         bullets: [
-          "Fundei e construí um monorepo de conteúdo/CMS com 10 pacotes internos",
-          "Automatizei pipelines de publicação de conteúdo e feeds sociais",
-          "Sou responsável pela plataforma de ponta a ponta: arquitetura, deploy e operação de conteúdo",
+          "Desenvolvi o tema do ProPlayNews sobre a plataforma open source CMMV blog",
+          "Criei o ContentMind, pipeline de conteúdo com LLM e checagem de fatos antes de publicar",
+          "Cuido do deploy e da operação do site",
         ],
       },
       {
@@ -194,10 +223,9 @@ export const translations = {
         ],
       },
       {
-        title: "Desenvolvedor Full Stack — Projetos Pessoais",
+        title: "Desenvolvedor Full Stack — Projeto Pessoal",
         bullets: [
-          "Construí automação de marketing de afiliados com geração de copy via IA e scraping (VoxelPromo)",
-          "Construí um motor quantitativo com 29 módulos de análise para fundos imobiliários (AlphaCota)",
+          "Construí automação de marketing de afiliados com copy gerada por IA, scraping e publicação em vários canais",
         ],
       },
       {

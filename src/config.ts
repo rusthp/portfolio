@@ -3,6 +3,7 @@ export const siteConfig = {
   accentColor: "#d98f2b",
   social: {
     email: "allyfreitas11@gmail.com",
+    emailAlt: "allyson.f.m@hotmail.com",
     linkedin: "https://linkedin.com/in/allysonfreitas",
     twitter: "",
     github: "https://github.com/rusthp",

@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Allyson Freitas",
   accentColor: "#d98f2b",
   social: {
-    email: "allyson.f.m@hotmail.com",
+    email: "allyfreitas11@gmail.com",
     linkedin: "https://linkedin.com/in/allysonfreitas",
     twitter: "",
     github: "https://github.com/rusthp",
